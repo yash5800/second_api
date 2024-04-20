@@ -9,9 +9,9 @@ def send_notes_email(email, notes):
     sender_password = "acnu bsol osui tlps"
 
     # Create the email message
-    message = MIMEText(f"Your Notes : {notes}")
+    message = MIMEText(f"Your Notes : \n {notes}")
     message["Subject"] = "Sending Notes"
-    message["From"] = sender_email
+    message["From"] = "Next Dimension"
     message["To"] = email
 
     # Connect to the SMTP server and send the email
